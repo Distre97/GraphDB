@@ -1,0 +1,21 @@
+digraph out {
+node [shape=record];
+node1 [label="<f0>1|<f1>Frank"];
+node2 [label="<f0>2|<f1>Alice"];
+node3 [label="<f0>3|<f1>Brown"];
+node4 [label="<f0>4|<f1>Cara"];
+node5 [label="<f0>5|<f1>Dave"];
+node6 [label="<f0>6|<f1>Elissa"];
+node1 -> node6 [label = "couple"];
+node2 -> node3 [label = "friends"];
+node3 -> node4 [label = "boss"];
+node4 -> node5 [label = "mother"];
+node5 -> node6 [label = "son"];
+node6 -> node2 [label = "teacher"];
+node1 -> node2 [label = "teacher"];
+node1 -> node3 [label = "teacher"];
+node1 -> node4 [label = "teacher"];
+node1 -> node5 [label = "teacher"];
+node3 -> node2 [label = "friends"];
+node6 -> node1 [label = "couple"];
+}
